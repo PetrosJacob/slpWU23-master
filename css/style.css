@@ -1,0 +1,111 @@
+body {
+    background-color: wheat;
+    height: 100%;
+}
+
+#container {
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 4fr 10fr 2fr; 
+    grid-template-areas: 
+      "hd"
+      "mn"
+      "ft"; 
+}
+.mn_text {
+    font-family: verdana;
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+
+    text-shadow: rgb(126, 123, 123) 2px 2px 2px;
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(../img/IMG_2614.jpg);
+    background-position-y: -125px ;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+.headerImg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    grid-area: mn;
+}
+
+footer {
+    grid-area: ft;
+    
+}
+
+.footer_rubrik {
+    font-family: verdana;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+
+
+@media screen and (min-width: 601px) {
+    body {
+      display: block;
+    }
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 70vw;
+    background: wheat;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
