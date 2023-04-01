@@ -58,7 +58,6 @@ footer {
     font-size: 20px;
 }
 
-
 @media screen and (min-width: 601px) {
     body {
       display: block;
@@ -109,8 +108,6 @@ footer {
     display: block;
 }
 
-
-
 /* FLip card*/
 .flip-card{
     background-color: transparent;
@@ -154,7 +151,6 @@ footer {
     width: 200px;
 }
 
-
 .flip-card-front, .flip-card-back{
     -webkit-box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
             box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
@@ -194,3 +190,37 @@ footer {
             transform: rotateY(180deg);
 }
 /*Flip card*/
+
+/*FunnyFarm*/
+.FunnyHeader {
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(../img/Skärmbild\ 2023-03-31\ 125216.png);
+    background-position-y: 0;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.FunnyBody {
+    background-color:rgb(188, 245, 179);
+    margin: auto;
+}
+.funnyMenu{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 70vw;
+    background:rgb(188, 245, 179);
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+
