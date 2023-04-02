@@ -25,7 +25,7 @@ body {
 .wrapper{
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 6;
 }
 
 header {
@@ -54,7 +54,13 @@ main {
 }
 
 footer {
-    grid-area: ft;    
+    grid-area: ft; 
+    background-color: rgb(62, 62, 62); 
+}
+
+.cAndCfooter {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_rubrik {
@@ -62,6 +68,7 @@ footer {
     font-weight: bold;
     text-align: left;
     font-size: 20px;
+    
 }
 
 @media screen and (min-width: 601px) {
@@ -73,10 +80,11 @@ footer {
 .menu{
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    row-gap: 100px;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    width: 70vw;
+    width: 30vw;
     background: wheat;
     position: fixed;
     top: 0;
@@ -204,15 +212,12 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url(../img/Skärmbild\ 2023-03-31\ 125216.png);
+    background-image: url(../img/FunnyFarmScenery.png);
     background-position-y: 0;
     background-size: 120%;
     background-repeat: no-repeat;
 }
 
-.funnyBody {
-    background-color: yellowgreen;
-}
 .mainImg {
     max-width: 100vw;
     width: 1000px;
@@ -221,3 +226,28 @@ footer {
     max-width: 100vw;
     width: 1000px;
 }
+
+ul {
+    list-style-type: none;  
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+}
+footer {
+    grid-area: ft; 
+    background-color: rgb(62, 62, 62); 
+    max-height: 250px;
+    min-width: 0;
+}
+li {
+    color: white;
+}
+ a{
+    font-family: verdana;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+ }
